@@ -1,0 +1,49 @@
+<html>
+ <head>
+     <title>parallax effect</title>
+     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <style type="text/css">
+         body{
+             margin: 0px;
+             padding: 0px;
+         }
+         .parallax{
+             background-attachment: fixed;
+             background-size: cover;
+             min-height: 730px;
+              background-position: center;
+             background-repeat: no-repeat;
+         }
+         #one{
+             background-image: url(US-wp1.jpg);
+         }
+         #two{
+             background-image: url(US-wp2.jpg);
+         }
+         #three{
+             background-image: url(US-wp3.jpg);
+         }
+         .text{
+             font-size: 50px;
+             text-align: center;
+             color: #fff;
+             padding-top: 300px;
+         }
+         .row{
+             width: 100%;
+         }
+     </style>
+</head>
+    <body>
+
+                <div class="col-lg-12 parallax" id="one"><p class="text">one</p></div>
+            
+                 
+                <div class="col-lg-12 parallax" id="two"><p class="text">two</p></div>
+              
+           
+                <div class="col-lg-12 parallax" id="three"><p class="text">three</p></div>
+           
+        
+    </body>
+</html>

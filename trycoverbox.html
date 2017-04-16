@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>coverbox</title>
+        <style>
+            .main{
+                margin-top: 100px;
+                margin-left: 200px;
+                height: 150px;
+                width: 150px;
+                background: #161415;
+                background-image: url(US-wp3.jpg);
+                cursor: pointer;
+            }
+            .overlay{
+                height: 0%;
+                width: 100%;
+                background: #000;
+                opacity: 0.7;
+                transition: height 300ms ease-in-out;
+            }
+            .overlay p{
+                font-size: 15px;
+                color: #fff;
+                font-weight: bold;
+                opacity: 0;
+                text-align: center;
+                vertical-align: 30%;
+                transition-delay: 100ms;
+            }
+            .main:hover{
+                border-bottom: 5px solid red;
+            }
+            .main:hover .overlay{
+                height: 100%;
+            }
+            .main:hover .overlay p{
+                opacity: 1;
+            }
+            .up{
+                height: 200px;
+                width: 200px;
+                background-image: url(US-wp1.jpg);
+                cursor: pointer;
+                margin-top: 50px;
+                margin-left: 300px;
+                box-shadow: 0px 25px 50px -20px rgba(0,0,0,0.2);
+                box-sizing: border-box;
+            }
+            .up:hover{
+                animation: trans 300ms forwards;
+            }
+            @keyframes trans{
+                0%{
+                    transform: translateY(0px);
+                }
+                100%{
+                    transform: translateY(-30px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="overlay"><p>puneet gupta</p></div>
+        </div>
+        <div class="up"></div>
+    </body>
+</html>

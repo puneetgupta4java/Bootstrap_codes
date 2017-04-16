@@ -1,0 +1,14 @@
+.sidebar{
+    margin-bottom: 3px;
+    background: silver;
+    min-height: 150px;
+    text-align: center;
+    font-size: large;
+}
+.main{
+    margin-bottom: 3px;
+    background: silver;
+    min-height: 300px;
+    text-align: center;
+    font-size: large;
+}
